@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - '0.8'
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-walker-backbone' ]; then cd .. && eval "mv $currentfolder generator-walker-backbone" && cd generator-walker-backbone; fi
+
